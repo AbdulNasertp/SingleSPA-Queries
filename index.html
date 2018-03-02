@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Micro Frontends</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/dist/common-dependencies.js"></script>
+  <script src="/dist/root-application.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Micro Frontends</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">Home</a></li> -->
+        <!-- <li><a href="#">App 1</a></li>
+        <li><a href="#">App 2</a></li>
+        <li><a href="#">App 3</a></li> -->
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a id="0" data-toggle="tab" href="#home">Home</a></li>
+    <li><a id="1" data-toggle="tab" href="#menu1">Tab 1</a></li>
+    <li><a id="2" data-toggle="tab" href="#menu2">Tab 2</a></li>
+    <li><a id="3" data-toggle="tab" href="#menu3">Tab 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">      
+      <h2>Micro Frontends</h2>  
+      <p>
+          The idea behind Micro Frontends is to think about a website or web app as a composition of features which are owned by independent teams.
+      </p>    
+      <p>   
+        Each team has a distinct area of business or mission it cares about and specializes in.     
+         A team is cross functional and develops its features end-to-end, from database to user interface.
+      </p>
+      <p>To evaluate the feasibility of using micro front end for ISM.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>App 1</h3>
+      <div id="app1"></div> 
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>App 2</h3>
+      <div id="app2"></div>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>App 1</h3>
+      <div id="app3"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
